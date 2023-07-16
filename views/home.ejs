@@ -7,9 +7,9 @@
     </head>
     <body>
 
-        <div>
+        <div class="container">
             <h1>contact list</h1>
-            <ul>
+            <ul >
                    
                 <% for (let i of contact_list) { %> 
                    <div class="contact"> 
@@ -19,7 +19,7 @@
                         </li>
                     </div>
                     <div class="delete-button">
-                        <a href="/delete-contact/?phone=<%= i.phone %>">
+                        <a href="/delete-contact/?id=<%= i._id %>">
                             delete
                         </a>
                     </div>
