@@ -1,13 +1,80 @@
-body{
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(red,rgb(92, 156, 183),rgba(0, 0, 0, 0.269));
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff55;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
     text-align: center;
-   
+    color: #333333;
 }
 
-
-.contact li{
-    list-style: none;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
-.contact li p{
-    
-    border: 2px solid blue;
+
+.contact {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.delete-button {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.delete-button a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+.delete-button a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #009688;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796b;
 }
